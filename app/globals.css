@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #082b52;
+  --color-primary-dark: #061f3d;
+  --color-primary-deep: #04172d;
+  --color-primary-soft: #eaf2fb;
+  --color-accent: #e0a91f;
+  --color-accent-dark: #c18b0d;
+  --color-accent-soft: #fff8e8;
+  --color-heading: #092b52;
+  --color-text: #39475c;
+  --color-text-muted: #647084;
+  --color-bg-main: #ffffff;
+  --color-bg-soft: #f7f9fc;
+  --color-card: #ffffff;
+  --color-border: #dce3ec;
+  --color-white: #ffffff;
+  --color-shadow: rgba(4, 31, 61, 0.12);
+  --font-site: Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-padding-top: 84px;
+}
+
+body {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+  color: var(--color-text);
+  background: var(--color-bg-main);
+  font-family: var(--font-site);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.font-display {
+  font-family: var(--font-site);
+}
+
+.hero-surface,
+.footer-surface {
+  background-color: var(--color-primary-dark);
+  background-image:
+    radial-gradient(circle at 55% 10%, rgba(30, 88, 145, 0.38), transparent 36%),
+    linear-gradient(135deg, var(--color-primary-deep) 0%, var(--color-primary) 58%, var(--color-primary-dark) 100%);
+}
+
+.hero-surface::after,
+.footer-surface::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.22;
+  background: linear-gradient(132deg, transparent 0 38%, rgba(255, 255, 255, 0.08) 38% 55%, transparent 55% 100%);
+}
+
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.section-kicker::before,
+.section-kicker::after {
+  content: "";
+  width: 2.75rem;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+.field-line {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--color-text-muted);
+  border-radius: 0;
+  background: transparent;
+  padding: 0.55rem 0;
+  color: var(--color-heading);
+  outline: none;
+}
+
+.field-line:focus {
+  border-color: var(--color-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

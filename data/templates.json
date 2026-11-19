@@ -1,0 +1,459 @@
+{
+  "common": {
+    "theme": {
+      "fontFamily": "Georgia, serif"
+    },
+    "Footer": {
+      "logo": "/main logo/logo.webp",
+      "logoAlt": "GlobalBridge University",
+      "followTitle": "Follow Us",
+      "contactTitle": "Contact Info",
+      "locationTitle": "Our Location",
+      "copyrightText": "© 2026 GlobalBridge University. All Rights Reserved.",
+      "quickLinks": [
+        {
+          "id": "footer-home",
+          "label": "Home",
+          "url": "/#hero"
+        },
+        {
+          "id": "footer-about",
+          "label": "About Us",
+          "url": "/#about"
+        },
+        {
+          "id": "footer-programs",
+          "label": "Our Programs",
+          "url": "/#programs"
+        },
+        {
+          "id": "footer-why",
+          "label": "Why Choose Us",
+          "url": "/#why-us"
+        },
+        {
+          "id": "footer-campus",
+          "label": "Campus Life",
+          "url": "/#campus-life"
+        },
+        {
+          "id": "footer-testimonials",
+          "label": "Testimonials",
+          "url": "/#testimonials"
+        },
+        {
+          "id": "footer-faq",
+          "label": "FAQs",
+          "url": "/#faqs"
+        },
+        {
+          "id": "footer-contact",
+          "label": "Contact Us",
+          "url": "/#contact"
+        }
+      ],
+      "socialLinks": [
+        {
+          "id": "facebook",
+          "label": "Facebook",
+          "url": "https://www.facebook.com/",
+          "icon": "facebook",
+          "ariaLabel": "Visit GlobalBridge University on Facebook"
+        },
+        {
+          "id": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/",
+          "icon": "instagram",
+          "ariaLabel": "Visit GlobalBridge University on Instagram"
+        },
+        {
+          "id": "linkedin",
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/",
+          "icon": "linkedin",
+          "ariaLabel": "Visit GlobalBridge University on LinkedIn"
+        },
+        {
+          "id": "youtube",
+          "label": "YouTube",
+          "url": "https://www.youtube.com/",
+          "icon": "youtube",
+          "ariaLabel": "Visit GlobalBridge University on YouTube"
+        }
+      ],
+      "contactInfo": {
+        "address": "123 University Avenue, Brookfield, CA 90210, United States",
+        "phone": "+1 (415) 555-0127",
+        "email": "info@globalbridge.edu"
+      }
+    }
+  },
+  "categories": {
+    "EducationSchoolUniversity": {
+      "sections": {
+        "Header": {
+          "variants": {
+            "EducationSchoolUniversityHeader2": {
+              "logo": "/main logo/logo.webp",
+              "logoAlt": "GlobalBridge University",
+              "navLinks": [
+                {
+                  "id": "nav-home",
+                  "label": "Home",
+                  "url": "/#hero"
+                },
+                {
+                  "id": "nav-about",
+                  "label": "About Us",
+                  "url": "/#about"
+                },
+                {
+                  "id": "nav-programs",
+                  "label": "Our Programs",
+                  "url": "/#programs"
+                },
+                {
+                  "id": "nav-why",
+                  "label": "Why Choose Us",
+                  "url": "/#why-us"
+                },
+                {
+                  "id": "nav-campus",
+                  "label": "Campus Life",
+                  "url": "/#campus-life"
+                },
+                {
+                  "id": "nav-testimonials",
+                  "label": "Testimonials",
+                  "url": "/#testimonials"
+                },
+                {
+                  "id": "nav-faq",
+                  "label": "FAQs",
+                  "url": "/#faqs"
+                }
+              ],
+              "contactButton": {
+                "id": "nav-contact",
+                "label": "Contact Us",
+                "url": "/#contact"
+              },
+              "openMenuLabel": "Open navigation menu",
+              "closeMenuLabel": "Close navigation menu"
+            }
+          }
+        },
+        "Hero": {
+          "variants": {
+            "EducationSchoolUniversityHero2": {
+              "eyebrow": "Knowledge Meets Opportunity",
+              "titleStart": "GlobalBridge",
+              "titleEnd": "University",
+              "description": "A world-class university dedicated to academic excellence, research, innovation and global opportunities for a brighter future.",
+              "videoBadge": "Explore Campus • Student Life • Our Programs •",
+              "playLabel": "Play campus introduction",
+              "studentImage": "/hero/student.webp",
+              "studentImageAlt": "GlobalBridge University graduate",
+              "campusImage": "/hero/campus.webp",
+              "campusImageAlt": "GlobalBridge University campus building"
+            }
+          }
+        },
+        "AboutUs": {
+          "variants": {
+            "EducationSchoolUniversityAboutUs2": {
+              "eyebrow": "About Us",
+              "titleStart": "A Leading University for",
+              "titleMiddle": "Academic Excellence &",
+              "titleAccent": "Holistic Development",
+              "description": "We are a forward-thinking university committed to quality education, research, innovation and the overall growth of our students.",
+              "ratingValue": "4.9/5",
+              "ratingLabel": "Trusted by 20K+ Students",
+              "recognition": "Globally Recognized Degrees",
+              "imageMain": "/about/student.webp",
+              "imageMainAlt": "GlobalBridge student carrying books",
+              "imageDetail": "/about/campus.webp",
+              "imageDetailAlt": "Students approaching the historic university campus",
+              "counterDuration": 1600,
+              "stats": [
+                {
+                  "id": "students",
+                  "icon": "students",
+                  "value": 20,
+                  "suffix": "K+",
+                  "label": "Students"
+                },
+                {
+                  "id": "programs",
+                  "icon": "programs",
+                  "value": 120,
+                  "suffix": "+",
+                  "label": "Programs"
+                },
+                {
+                  "id": "satisfaction",
+                  "icon": "award",
+                  "value": 95,
+                  "suffix": "%",
+                  "label": "Student Satisfaction"
+                }
+              ]
+            }
+          }
+        },
+        "Programs": {
+          "variants": {
+            "EducationSchoolUniversityPrograms2": {
+              "eyebrow": "Our Programs",
+              "titleStart": "Explore Our",
+              "titleEnd": "Programs",
+              "subtitle": "A wide range of academic programs designed to build knowledge, skills and real-world expertise for a successful career.",
+              "programs": [
+                {
+                  "id": "graduation",
+                  "title": "Graduation Program",
+                  "image": "/programs/graduation.webp",
+                  "imageAlt": "Historic university hall for graduation programs",
+                  "url": "/#contact"
+                },
+                {
+                  "id": "summer",
+                  "title": "Summer Program",
+                  "image": "/programs/summer.webp",
+                  "imageAlt": "Student attending a summer program",
+                  "url": "/#contact"
+                },
+                {
+                  "id": "undergraduate",
+                  "title": "Undergraduate Program",
+                  "image": "/programs/undergraduate.webp",
+                  "imageAlt": "Graduate representing undergraduate programs",
+                  "url": "/#contact"
+                },
+                {
+                  "id": "online",
+                  "title": "Online Program",
+                  "image": "/programs/online.webp",
+                  "imageAlt": "Student learning online at a laptop",
+                  "url": "/#contact"
+                }
+              ]
+            }
+          }
+        },
+        "WhyChooseUs": {
+          "variants": {
+            "EducationSchoolUniversityWhyChooseUs2": {
+              "eyebrow": "Why Choose Us",
+              "titleStart": "Why Choose Our",
+              "titleMiddle": "University for Your",
+              "titleEnd": "Bright Future",
+              "watermarkImage": "/about/campus.webp",
+              "watermarkImageAlt": "GlobalBridge campus silhouette",
+              "features": [
+                {
+                  "id": "academic",
+                  "icon": "academic",
+                  "title": "Academic Excellence",
+                  "description": "Industry-relevant programs, experienced faculty and a strong focus on research and innovation."
+                },
+                {
+                  "id": "facilities",
+                  "icon": "facilities",
+                  "title": "Modern Learning Facilities",
+                  "description": "Smart classrooms, advanced labs, digital library and a tech-enabled campus for a better learning experience."
+                },
+                {
+                  "id": "career",
+                  "icon": "career",
+                  "title": "Career Opportunities",
+                  "description": "Dedicated placement support, industry partnerships and internship programs with leading organizations."
+                },
+                {
+                  "id": "development",
+                  "icon": "development",
+                  "title": "Holistic Student Development",
+                  "description": "A vibrant campus life with clubs, events, sports and leadership programs to build well-rounded professionals."
+                }
+              ]
+            }
+          }
+        },
+        "CampusLife": {
+          "variants": {
+            "EducationSchoolUniversityCampusLife2": {
+              "eyebrow": "Campus Life",
+              "titleStart": "Experience Our",
+              "titleEnd": "Campus Life",
+              "subtitle": "A vibrant and inclusive campus where learning, creativity and student life come together.",
+              "image": "/campus-life/banner.webp",
+              "imageAlt": "Students enjoying life at GlobalBridge University",
+              "playLabel": "Play campus life video",
+              "videoUrl": "https://www.youtube.com/embed/91tdJmFJkFo?autoplay=1&rel=0",
+              "modalTitle": "GlobalBridge Campus Life Video",
+              "closeLabel": "Close campus life video"
+            }
+          }
+        },
+        "Testimonials": {
+          "variants": {
+            "EducationSchoolUniversityTestimonials2": {
+              "eyebrow": "Testimonials",
+              "titleStart": "What Our",
+              "titleEnd": "Students Say",
+              "subtitle": "Real experiences from our students that reflect our commitment to quality education and growth.",
+              "previousLabel": "Previous testimonial",
+              "nextLabel": "Next testimonial",
+              "autoPlayInterval": 4500,
+              "items": [
+                {
+                  "id": "ananya",
+                  "name": "Ananya Sharma",
+                  "degree": "B.Tech – Computer Science",
+                  "quote": "The campus environment is truly inspiring. The faculty is supportive, the learning resources are excellent, and I’ve gained both knowledge and confidence here. It has been a transformative journey for my personal and professional growth.",
+                  "rating": 5,
+                  "image": "/testimonials/student.webp",
+                  "imageAlt": "Ananya Sharma on campus"
+                },
+                {
+                  "id": "maya",
+                  "name": "Maya Patel",
+                  "degree": "MBA - Global Business",
+                  "quote": "GlobalBridge gave me the confidence to lead, collaborate and solve real business challenges. The faculty mentorship and industry exposure made every semester meaningful.",
+                  "rating": 5,
+                  "image": "/testimonials/maya-patel.webp",
+                  "imageAlt": "Maya Patel at GlobalBridge University"
+                },
+                {
+                  "id": "sophia",
+                  "name": "Sophia Williams",
+                  "degree": "B.A. - International Relations",
+                  "quote": "The diverse campus community helped me discover new perspectives and friendships. I feel supported academically while enjoying a truly vibrant student life.",
+                  "rating": 5,
+                  "image": "/testimonials/sophia-williams.webp",
+                  "imageAlt": "Sophia Williams at GlobalBridge University"
+                },
+                {
+                  "id": "daniel",
+                  "name": "Daniel Brooks",
+                  "degree": "M.Sc. - Data Science",
+                  "quote": "Modern labs, practical projects and approachable professors made complex ideas easier to understand. The experience prepared me well for my next career step.",
+                  "rating": 5,
+                  "image": "/testimonials/online.webp",
+                  "imageAlt": "Daniel Brooks studying at GlobalBridge University"
+                }
+              ]
+            }
+          }
+        },
+        "Faq": {
+          "variants": {
+            "EducationSchoolUniversityFaq2": {
+              "eyebrow": "FAQ's",
+              "titleStart": "Find answers to common",
+              "titleAccent": "questions",
+              "titleEnd": "about our university",
+              "faqItems": [
+                {
+                  "id": "programs",
+                  "question": "What programs does the university offer?",
+                  "answer": "We offer undergraduate, graduate, summer and flexible online programs across a wide range of disciplines."
+                },
+                {
+                  "id": "eligibility",
+                  "question": "What are the eligibility criteria for admission?",
+                  "answer": "Eligibility depends on the chosen program. Our admissions team can guide you through academic requirements and documentation."
+                },
+                {
+                  "id": "apply",
+                  "question": "How can I apply for admission?",
+                  "answer": "You can apply online through our official website by completing the application form and submitting the required documents."
+                },
+                {
+                  "id": "scholarships",
+                  "question": "Does the university provide scholarships?",
+                  "answer": "Yes. Merit-based and need-based scholarships are available for eligible students."
+                },
+                {
+                  "id": "hostel",
+                  "question": "Is hostel accommodation available on campus?",
+                  "answer": "Yes. Safe and well-equipped residence options are available for eligible students."
+                },
+                {
+                  "id": "career",
+                  "question": "What career support services are offered?",
+                  "answer": "Students receive career counselling, placement preparation, internship guidance and access to employer partnerships."
+                }
+              ]
+            }
+          }
+        },
+        "Contact": {
+          "variants": {
+            "EducationSchoolUniversityContact2": {
+              "eyebrow": "Contact Us",
+              "titleStart": "Get in Touch",
+              "titleEnd": "With Us",
+              "subtitle": "Have questions about our programs, admissions or campus life? We’re here to help you.",
+              "image": "/contact/campus.webp",
+              "imageAlt": "GlobalBridge University campus",
+              "fields": [
+                {
+                  "id": "firstName",
+                  "label": "First Name *",
+                  "placeholder": "Enter first name",
+                  "type": "text"
+                },
+                {
+                  "id": "lastName",
+                  "label": "Last Name *",
+                  "placeholder": "Enter last name",
+                  "type": "text"
+                },
+                {
+                  "id": "email",
+                  "label": "Email Address *",
+                  "placeholder": "Enter email address",
+                  "type": "email"
+                },
+                {
+                  "id": "phone",
+                  "label": "Phone Number *",
+                  "placeholder": "Enter phone number",
+                  "type": "tel"
+                }
+              ],
+              "subjectLabel": "Subject *",
+              "subjectPlaceholder": "Select a subject",
+              "subjectOptions": [
+                "Admissions",
+                "Undergraduate Program",
+                "Graduate Program",
+                "Online Program",
+                "Scholarships"
+              ],
+              "messageLabel": "Message *",
+              "messagePlaceholder": "Write your message",
+              "submitText": "Send Message"
+            }
+          }
+        }
+      }
+    }
+  },
+  "pages": {
+    "home": {
+      "components": [
+        "Hero",
+        "AboutUs",
+        "Programs",
+        "WhyChooseUs",
+        "CampusLife",
+        "Testimonials",
+        "Faq",
+        "Contact"
+      ]
+    }
+  }
+}
