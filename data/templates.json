@@ -9,7 +9,7 @@
       "followTitle": "Follow Us",
       "contactTitle": "Contact Info",
       "locationTitle": "Our Location",
-      "copyrightText": "© 2026 GlobalBridge University. All Rights Reserved.",
+      "copyrightText": "© 2026 GlobalBridge University. All Rights Reserved. Powered By Lestow",
       "quickLinks": [
         {
           "id": "footer-home",
@@ -84,8 +84,8 @@
       ],
       "contactInfo": {
         "address": "123 University Avenue, Brookfield, CA 90210, United States",
-        "phone": "+1 (415) 555-0127",
-        "email": "info@globalbridge.edu"
+        "phone": "+1 (000) 000-0000",
+        "email": "info@xyz.com"
       }
     }
   },

@@ -17,7 +17,7 @@ export const WhyChooseUs = ({ data }: WhyChooseUsProps) => {
             <span className="block">{data.titleMiddle}</span>
             <span className="block italic text-[var(--color-accent)]">{data.titleEnd}</span>
           </h2>
-          <div className="relative mt-8 min-h-[300px] flex-1 overflow-hidden rounded-2xl shadow-[0_12px_36px_var(--color-shadow)] lg:min-h-[340px]">
+          <div className="relative mt-4 flex-1 min-h-[420px] w-full overflow-hidden rounded-2xl shadow-[0_12px_36px_var(--color-shadow)] lg:min-h-[460px]">
             <Image src={data.watermarkImage} alt={data.watermarkImageAlt} fill sizes="(max-width: 1023px) 100vw, 460px" className="object-cover" />
           </div>
         </div>
