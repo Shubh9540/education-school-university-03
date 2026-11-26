@@ -26,7 +26,7 @@ export const Testimonials = ({ data }: TestimonialsProps) => {
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
         <div className="mb-8 text-center lg:mb-10">
           <span className="section-kicker"><FaGraduationCap className="text-[var(--color-accent)]" />{data.eyebrow}</span>
-          <h2 className="font-display mt-3 text-4xl font-semibold text-[var(--color-heading)] sm:text-5xl lg:text-6xl">{data.titleStart} <span className="text-[var(--color-accent)]">{data.titleEnd}</span></h2>
+          <h2 className="font-display mt-3 text-2xl font-semibold text-[var(--color-heading)] sm:text-4xl lg:text-6xl">{data.titleStart} <span className="text-[var(--color-accent)]">{data.titleEnd}</span></h2>
           <p className="mx-auto mt-3 max-w-3xl text-base leading-7 text-[var(--color-text)]">{data.subtitle}</p>
         </div>
 
@@ -48,8 +48,8 @@ export const Testimonials = ({ data }: TestimonialsProps) => {
         </div>
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3 lg:justify-start lg:pl-[38%]">
-          <button type="button" onClick={() => move(-1)} aria-label={data.previousLabel} className="grid h-11 w-11 place-items-center rounded-full border border-[var(--color-border)] text-[var(--color-heading)]"><FaArrowLeft /></button>
-          <button type="button" onClick={() => move(1)} aria-label={data.nextLabel} className="grid h-11 w-11 place-items-center rounded-full bg-[var(--color-heading)] text-[var(--color-white)]"><FaArrowRight /></button>
+          <button type="button" onClick={() => move(-1)} aria-label={data.previousLabel} className="grid h-11 w-11 place-items-center rounded-full border border-[var(--color-border)] bg-transparent text-[var(--color-heading)] transition hover:border-[var(--color-heading)] hover:bg-[var(--color-heading)] hover:text-[var(--color-white)]"><FaArrowLeft /></button>
+          <button type="button" onClick={() => move(1)} aria-label={data.nextLabel} className="grid h-11 w-11 place-items-center rounded-full border border-[var(--color-border)] bg-transparent text-[var(--color-heading)] transition hover:border-[var(--color-heading)] hover:bg-[var(--color-heading)] hover:text-[var(--color-white)]"><FaArrowRight /></button>
           <div className="ml-0 flex items-center gap-2 sm:ml-5">
             {data.items.map((testimonial, index) => (
               <button key={testimonial.id} type="button" onClick={() => setActive(index)} aria-label={testimonial.name} aria-current={index === active ? 'true' : undefined} className={`relative h-12 w-12 overflow-hidden rounded-full border-2 transition sm:h-14 sm:w-14 ${index === active ? 'border-[var(--color-accent)] ring-2 ring-[var(--color-accent-soft)]' : 'border-[var(--color-border)] opacity-75'}`}>

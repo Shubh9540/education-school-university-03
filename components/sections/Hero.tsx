@@ -1,4 +1,4 @@
-import { FaGraduationCap, FaPlay } from 'react-icons/fa';
+import { FaBookOpen, FaGraduationCap } from 'react-icons/fa';
 import Image from 'next/image';
 import { HeroProps } from '@/types/templates.types';
 
@@ -6,24 +6,22 @@ export const Hero = ({ data }: HeroProps) => {
   if (!data) return null;
 
   return (
-    <section id="hero" className="hero-surface relative min-h-[760px] overflow-hidden pt-[76px] text-[var(--color-white)] lg:min-h-[650px] lg:pt-[88px]">
-      <div className="absolute bottom-0 right-0 h-40 w-[38vw] max-w-[520px] border-t border-[var(--color-white)]/10 opacity-30" aria-hidden="true" />
-
-      <div className="relative z-10 mx-auto flex min-h-[684px] max-w-[1440px] flex-col items-center px-4 pb-10 pt-8 sm:px-6 lg:min-h-[562px] lg:flex-row lg:px-8 lg:pb-0 lg:pt-0">
-        <div className="order-2 mt-8 w-full max-w-[820px] px-2 text-center lg:absolute lg:left-[280px] lg:right-[280px] lg:top-1/2 lg:mt-0 lg:w-auto lg:max-w-none lg:-translate-y-1/2 lg:px-0 lg:text-left xl:left-[320px] xl:right-[300px]">
-          <div className="mb-5 flex items-center justify-center gap-3 lg:justify-start">
+    <section id="hero" className="hero-surface relative min-h-[700px] overflow-hidden pt-[76px] text-[var(--color-white)] lg:min-h-[650px] lg:pt-[88px]">
+      <div className="relative z-10 mx-auto flex min-h-[624px] max-w-[1440px] flex-col items-center px-4 pb-10 pt-8 sm:px-6 lg:min-h-[562px] lg:flex-row lg:px-8 lg:pb-0 lg:pt-0">
+        <div className="order-2 mt-8 w-full max-w-[820px] px-1 text-center lg:absolute lg:left-[280px] lg:right-[280px] lg:top-1/2 lg:mt-0 lg:w-auto lg:max-w-none lg:-translate-y-1/2 lg:px-0 lg:text-left xl:left-[320px] xl:right-[300px]">
+          <div className="mb-4 flex items-center justify-center gap-3 sm:mb-5 lg:justify-start">
             <FaGraduationCap className="text-2xl text-[var(--color-accent)]" />
             <p className="text-base font-semibold sm:text-lg lg:text-xl">{data.eyebrow}</p>
             <span className="hidden h-px min-w-16 flex-1 bg-gradient-to-r from-[var(--color-accent)] to-transparent sm:block" />
           </div>
 
-          <h1 className="font-display text-[clamp(2.8rem,5vw,5rem)] font-semibold uppercase leading-[0.94] tracking-[-0.035em]">
+          <h1 className="font-display text-[clamp(1.75rem,7.2vw,4.75rem)] font-semibold uppercase leading-[0.98] tracking-[-0.03em] lg:text-[clamp(2.8rem,4.4vw,4.85rem)]">
             <span className="block">{data.titleStart}</span>
             <span className="block text-[var(--color-accent)]">{data.titleEnd}</span>
           </h1>
 
-          <div className="mx-auto mt-8 flex max-w-[720px] flex-col items-center gap-6 sm:flex-row lg:mx-0 lg:mt-9 lg:gap-8">
-            <button type="button" aria-label={data.playLabel} className="relative grid h-28 w-28 shrink-0 place-items-center text-[var(--color-white)]">
+          <div className="mx-auto mt-6 flex max-w-[720px] flex-col items-center gap-5 sm:mt-8 sm:flex-row sm:gap-6 lg:mx-0 lg:mt-9 lg:gap-8">
+            <div aria-label={data.playLabel} className="relative grid h-28 w-28 shrink-0 place-items-center text-[var(--color-white)]">
               <svg aria-hidden="true" viewBox="0 0 120 120" className="absolute inset-0 h-full w-full animate-[spin_16s_linear_infinite] overflow-visible">
                 <defs>
                   <path id="hero-video-ring" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" />
@@ -33,15 +31,15 @@ export const Hero = ({ data }: HeroProps) => {
                 </text>
               </svg>
               <span className="absolute inset-[25px] rounded-full border-2 border-[var(--color-accent)] bg-[var(--color-accent)]/10" />
-              <FaPlay className="relative ml-1 text-xl text-[var(--color-accent)]" />
-            </button>
+              <FaBookOpen className="relative text-xl text-[var(--color-accent)]" />
+            </div>
             <span className="hidden h-24 w-px shrink-0 bg-[var(--color-accent)] sm:block" />
             <p className="max-w-[500px] text-base leading-7 text-[var(--color-white)]/90 lg:text-lg lg:leading-8">{data.description}</p>
           </div>
         </div>
 
         <div className="order-1 flex w-full items-center justify-center gap-4 lg:order-2 lg:block lg:w-0">
-          <div className="relative aspect-[3/4] h-auto w-[44%] max-w-[180px] overflow-hidden border border-[var(--color-white)]/40 shadow-2xl lg:absolute lg:bottom-0 lg:left-0 lg:h-[455px] lg:w-[250px] lg:max-w-none lg:aspect-auto xl:w-[285px]">
+          <div className="relative aspect-[7/10] h-auto w-[44%] max-w-[180px] overflow-hidden border border-[var(--color-white)]/40 shadow-2xl lg:absolute lg:bottom-0 lg:left-0 lg:w-[250px] lg:max-w-none xl:w-[285px]">
             <Image src={data.studentImage} alt={data.studentImageAlt} fill priority sizes="(max-width: 1023px) 44vw, 285px" className="object-cover object-top" />
             <span className="absolute right-0 top-0 h-16 w-16 border-r-2 border-t-2 border-[var(--color-accent)]" />
           </div>

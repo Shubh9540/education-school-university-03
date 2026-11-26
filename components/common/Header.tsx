@@ -50,9 +50,9 @@ export const Header = ({ data }: HeaderProps) => {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled || open ? 'bg-[var(--color-primary-dark)] shadow-lg' : 'bg-transparent'}`}>
       <div className="mx-auto flex h-[76px] w-full max-w-[1440px] items-center justify-between gap-5 px-4 sm:px-6 lg:h-[88px] lg:px-8">
-        <div className="flex min-w-0 items-center gap-5">
-          <Link href="/#hero" aria-label={data.logoAlt} className="shrink-0">
-            <Image src={data.logo} alt={data.logoAlt} width={520} height={170} priority className="h-12 w-auto max-w-[220px] object-contain sm:h-14 lg:max-w-[260px]" />
+        <div className="flex min-w-0 items-center gap-4 sm:gap-5">
+          <Link href="/#hero" aria-label={data.logoAlt} className="flex shrink-0 items-center">
+            <Image src={data.logo} alt={data.logoAlt} width={520} height={170} priority className="h-11 w-auto max-w-[180px] object-contain object-left sm:h-14 sm:max-w-[240px] lg:max-w-[260px]" />
           </Link>
           <span className="hidden h-12 w-px bg-[var(--color-white)]/65 lg:block" />
         </div>

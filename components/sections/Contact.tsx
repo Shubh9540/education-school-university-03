@@ -20,14 +20,14 @@ export const Contact = ({ data }: ContactProps) => {
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
         <div className="mb-8 text-center lg:mb-10">
           <span className="section-kicker"><FaGraduationCap className="text-[var(--color-accent)]" />{data.eyebrow}</span>
-          <h2 className="font-display mt-3 text-4xl font-semibold text-[var(--color-heading)] sm:text-5xl lg:text-6xl">{data.titleStart} <span className="text-[var(--color-accent)]">{data.titleEnd}</span></h2>
+          <h2 className="font-display mt-3 text-2xl font-semibold text-[var(--color-heading)] sm:text-4xl lg:text-6xl">{data.titleStart} <span className="text-[var(--color-accent)]">{data.titleEnd}</span></h2>
           <p className="mx-auto mt-3 max-w-3xl text-base leading-7 text-[var(--color-text)]">{data.subtitle}</p>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-[0.42fr_0.58fr] lg:items-stretch">
           <div className="relative min-h-[340px] overflow-hidden rounded-3xl">
             <Image src={data.image} alt={data.imageAlt} fill sizes="(max-width: 1023px) 100vw, 42vw" className="object-cover" />
-            <span className="absolute left-0 top-0 h-20 w-20 border-l-4 border-t-4 border-[var(--color-accent)]" />
+            <span className="pointer-events-none absolute left-0 top-0 h-20 w-20 rounded-tl-3xl border-l-4 border-t-4 border-[var(--color-accent)]" />
           </div>
 
           <form onSubmit={submit} className="rounded-3xl border border-[var(--color-border)] bg-[var(--color-bg-soft)] p-6 shadow-[0_12px_40px_var(--color-shadow)] sm:p-9 lg:p-10">

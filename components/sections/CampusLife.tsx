@@ -29,10 +29,10 @@ export const CampusLife = ({ data }: CampusLifeProps) => {
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8">
         <div className="mb-8 text-center lg:mb-10">
           <span className="section-kicker"><FaGraduationCap className="text-[var(--color-accent)]" />{data.eyebrow}</span>
-          <h2 className="font-display mt-3 text-4xl font-semibold text-[var(--color-heading)] sm:text-5xl lg:text-6xl">{data.titleStart} <span className="text-[var(--color-accent)]">{data.titleEnd}</span></h2>
+          <h2 className="font-display mt-3 text-2xl font-semibold text-[var(--color-heading)] sm:text-4xl lg:text-6xl">{data.titleStart} <span className="text-[var(--color-accent)]">{data.titleEnd}</span></h2>
           <p className="mx-auto mt-3 max-w-3xl text-base leading-7 text-[var(--color-text)]">{data.subtitle}</p>
         </div>
-        <div className="relative mx-auto aspect-[16/7] min-h-[300px] max-w-[1080px] overflow-hidden rounded-3xl">
+        <div className="relative mx-auto aspect-video w-full max-w-[1080px] overflow-hidden rounded-2xl sm:rounded-3xl lg:aspect-[16/7] lg:min-h-[300px]">
           <Image src={data.image} alt={data.imageAlt} fill sizes="(max-width: 1080px) 100vw, 1080px" className="object-cover" />
           <button type="button" onClick={() => setIsOpen(true)} aria-label={data.playLabel} className="absolute left-1/2 top-1/2 grid h-20 w-20 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border-4 border-[var(--color-white)] bg-[var(--color-accent)] text-2xl text-[var(--color-white)] shadow-xl transition hover:scale-105 sm:h-24 sm:w-24">
             <FaPlay className="ml-1" />

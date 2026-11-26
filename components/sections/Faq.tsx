@@ -11,7 +11,7 @@ export const Faq = ({ data }: FaqProps) => {
   return (
     <section id="faqs" className="w-full bg-[var(--color-bg-main)] py-8 lg:py-14">
       <div className="mx-auto grid max-w-[1280px] gap-10 px-4 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:px-8">
-        <div className="space-y-3">
+        <div className="order-2 space-y-3 lg:order-1">
           {data.faqItems.map((item) => {
             const isOpen = openId === item.id;
             return (
@@ -26,12 +26,12 @@ export const Faq = ({ data }: FaqProps) => {
           })}
         </div>
 
-        <div className="lg:pl-8">
-          <span className="inline-flex items-center gap-2 rounded-full bg-[var(--color-accent-soft)] px-4 py-2 text-sm font-bold text-[var(--color-heading)]"><FaGraduationCap className="text-[var(--color-accent)]" />{data.eyebrow}</span>
-          <h2 className="font-display mt-5 text-4xl font-semibold leading-[1.12] text-[var(--color-heading)] sm:text-5xl lg:text-6xl">
-            <span className="block">{data.titleStart}</span>
-            <span className="block italic text-[var(--color-accent)]">{data.titleAccent}</span>
-            <span className="block">{data.titleEnd}</span>
+        <div className="order-1 flex flex-col items-center text-center lg:order-2 lg:items-start lg:pl-8 lg:text-left">
+          <span className="inline-flex w-fit items-center gap-2 rounded-full bg-[var(--color-accent-soft)] px-4 py-2 text-sm font-bold text-[var(--color-heading)]"><FaGraduationCap className="text-[var(--color-accent)]" />{data.eyebrow}</span>
+          <h2 className="font-display mt-5 text-2xl font-semibold leading-[1.15] text-[var(--color-heading)] sm:text-4xl lg:text-5xl lg:leading-[1.12] xl:text-6xl">
+            <span className="inline lg:block">{data.titleStart} </span>
+            <span className="inline italic text-[var(--color-accent)] lg:block">{data.titleAccent} </span>
+            <span className="inline lg:block">{data.titleEnd}</span>
           </h2>
           <span className="mt-7 block h-1 w-20 bg-[var(--color-accent)]" />
         </div>

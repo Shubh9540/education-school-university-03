@@ -10,14 +10,14 @@ export const WhyChooseUs = ({ data }: WhyChooseUsProps) => {
   return (
     <section id="why-us" className="relative w-full overflow-hidden bg-[var(--color-bg-main)] py-8 lg:py-14">
       <div className="mx-auto grid max-w-[1280px] items-stretch gap-10 px-4 sm:px-6 lg:grid-cols-[0.85fr_1.4fr] lg:px-8">
-        <div className="flex min-h-[520px] flex-col">
-          <span className="inline-flex items-center gap-2 rounded-full bg-[var(--color-accent-soft)] px-4 py-2 text-sm font-bold text-[var(--color-heading)]"><FaAward className="text-[var(--color-accent)]" />{data.eyebrow}</span>
-          <h2 className="font-display mt-5 text-4xl font-semibold leading-[1.12] text-[var(--color-heading)] sm:text-5xl">
-            <span className="block">{data.titleStart}</span>
-            <span className="block">{data.titleMiddle}</span>
-            <span className="block italic text-[var(--color-accent)]">{data.titleEnd}</span>
+        <div className="flex flex-col items-center text-center lg:min-h-[520px] lg:items-start lg:text-left">
+          <span className="inline-flex w-fit items-center gap-2 rounded-full bg-[var(--color-accent-soft)] px-4 py-2 text-sm font-bold text-[var(--color-heading)]"><FaAward className="text-[var(--color-accent)]" />{data.eyebrow}</span>
+          <h2 className="font-display mt-5 text-2xl font-semibold leading-[1.15] text-[var(--color-heading)] sm:text-4xl lg:text-5xl lg:leading-[1.12]">
+            <span className="inline lg:block">{data.titleStart} </span>
+            <span className="inline lg:block">{data.titleMiddle} </span>
+            <span className="inline italic text-[var(--color-accent)] lg:block">{data.titleEnd}</span>
           </h2>
-          <div className="relative mt-4 flex-1 min-h-[420px] w-full overflow-hidden rounded-2xl shadow-[0_12px_36px_var(--color-shadow)] lg:min-h-[460px]">
+          <div className="relative mt-6 min-h-[280px] w-full flex-1 overflow-hidden rounded-2xl shadow-[0_12px_36px_var(--color-shadow)] sm:min-h-[380px] lg:mt-4 lg:min-h-[460px]">
             <Image src={data.watermarkImage} alt={data.watermarkImageAlt} fill sizes="(max-width: 1023px) 100vw, 460px" className="object-cover" />
           </div>
         </div>

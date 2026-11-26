@@ -17,8 +17,8 @@ export const Footer = ({ data }: FooterProps) => {
     <footer className="footer-surface relative overflow-hidden text-[var(--color-white)]">
       <div className="relative z-10 mx-auto max-w-[1280px] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
         <div className="grid gap-9 border-b border-[var(--color-white)]/70 pb-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1.25fr_1.25fr] lg:gap-10">
-          <Link href="/#hero" className="flex items-center border-[var(--color-white)]/50 lg:border-r lg:pr-10">
-            <Image src={data.logo} alt={data.logoAlt} width={520} height={170} className="h-auto w-full max-w-[300px] object-contain" />
+          <Link href="/#hero" className="flex items-center justify-start border-[var(--color-white)]/50 lg:border-r lg:pr-10">
+            <Image src={data.logo} alt={data.logoAlt} width={520} height={170} className="h-auto w-full max-w-[170px] object-contain object-left sm:max-w-[220px] lg:max-w-[260px]" />
           </Link>
 
           <div>

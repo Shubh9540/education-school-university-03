@@ -64,12 +64,12 @@ export const AboutUs = ({ data }: AboutUsProps) => {
           </div>
         </div>
 
-        <div className="flex flex-col">
-          <span className="inline-flex items-center gap-2 rounded-full bg-[var(--color-accent-soft)] px-4 py-2 text-sm font-bold text-[var(--color-heading)]"><FaGraduationCap />{data.eyebrow}</span>
-          <h2 className="font-display mt-4 text-4xl font-semibold leading-[1.1] text-[var(--color-heading)] sm:text-5xl">
-            <span className="block">{data.titleStart}</span>
-            <span className="block">{data.titleMiddle}</span>
-            <span className="block italic text-[var(--color-accent)]">{data.titleAccent}</span>
+        <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+          <span className="inline-flex w-fit items-center gap-2 rounded-full bg-[var(--color-accent-soft)] px-4 py-2 text-sm font-bold text-[var(--color-heading)]"><FaGraduationCap />{data.eyebrow}</span>
+          <h2 className="font-display mt-4 text-2xl font-semibold leading-[1.15] text-[var(--color-heading)] sm:text-4xl lg:text-5xl lg:leading-[1.1]">
+            <span className="inline lg:block">{data.titleStart} </span>
+            <span className="inline lg:block">{data.titleMiddle} </span>
+            <span className="inline italic text-[var(--color-accent)] lg:block">{data.titleAccent}</span>
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-7 text-[var(--color-text)]">{data.description}</p>
 
